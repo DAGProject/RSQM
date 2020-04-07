@@ -19,7 +19,7 @@ Dependencies for this library:
 * [Usage](#usage)
 
 # Introduction <a class="anchor" id="introduction"></a>
-This is the backend of RSQM device.
+This is the backend of RSQM device. It automatically starts and ends observations.
 
 # Installation <a class="anchor" id="installation"></a>
 Currently a python wheel or pip installation is available for this module is under development. Please download/clone it and use it as a directory under working directory or manually copy all files to neccessery locations.
