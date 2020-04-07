@@ -23,7 +23,9 @@ dag = ast.Site(logger, latitude, longitude, elevation, name="DAG")
 tim = ast.Time(logger)
 tim_calc = ast.TimeCalc(logger, dag)
 
-if not tim_calc.is_night(now := tim.now(utc=True)):
+now = tim.now(utc=True)
+
+if not tim_calc.is_night(now):
     data = dh.mean_read(10)
     moon = ast.Moon(logger, now)
     moon_alt_az = dag.altaz(moon, now)

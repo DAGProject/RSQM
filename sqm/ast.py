@@ -74,7 +74,8 @@ class Update:
     def astroplan(self):
         """Updates astropy"""
         try:
-            download_IERS_A()
+            #download_IERS_A()
+            pass
         except Exception as excpt:
             self.logger.log(excpt)
 
